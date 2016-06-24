@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Simon Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/prefixfree.js"></script>
+</head>
+
+<body>
+    <button id="start-button" class="top-buttons">Start</button>
+    <button id="strict-button" class="top-buttons">Strict</button>
+    <p id="steps"></p>
+    <div class="simon-container">
+        <div id="simon">
+            <div class="color-button-container">
+                <div class="simon-center">
+                    <p><span class="green-letter">S</span><span class="red-letter">I</span><span class="yellow-letter">M</span><span class="blue-letter">O</span><span class="green-letter">N</span></p>
+                </div>
+                <div id="green-button" class="color-button" data-glowclass="green-glow">
+                    <audio id="green-audio">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+          </audio>
+                </div>
+                <div id="red-button" class="color-button" data-glowclass="red-glow">
+                    <audio id="red-audio">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+          </audio>
+                </div>
+                <div id="yellow-button" class="color-button" data-glowclass="yellow-glow">
+                    <audio id="yellow-audio">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+          </audio>
+                </div>
+                <div id="blue-button" class="color-button" data-glowclass="blue-glow">
+                    <audio id="blue-audio">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+          </audio>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
