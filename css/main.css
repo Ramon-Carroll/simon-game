@@ -1,187 +1,188 @@
 body {
-    margin: 0 auto;
-    text-align: center;
-    height: 100vh;
-    background-image: url(https://pixabay.com/static/uploads/photo/2015/06/24/02/12/the-blurred-819388_960_720.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  background: black;
+  /*background-image: url(https://pixabay.com/static/uploads/photo/2015/06/24/02/12/the-blurred-819388_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;*/
 }
 
 ::-moz-selection {
-    background: none;
+  background: none;
 }
 
 ::selection {
-    background: none;
+  background: none;
 }
 
 .strict-on {
-    background: blue;
+  background: blue;
 }
 
 .top-buttons {
-    position: relative;
-    top: 20px;
-    box-shadow: 0px 10px 14px -7px #276873;
-    background-color: #1A1C1D​;
-    border-radius: 8px;
-    display: inline-block;
-    cursor: pointer;
-    color: black;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 13px 32px;
-    margin-top: 100px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #3d768a;
+  position: relative;
+  top: 20px;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background-color: #1A1C1D​;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+  margin-top: 100px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
 }
 
 #steps {
-    position: relative;
-    top: 40px;
-    color: black;
-    font-family: Arial;
-    font-size: 35px;
-    font-weight: bold;
-    padding: 13px 32px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #3d768a;
+  position: relative;
+  top: 40px;
+  color: blue;
+	font-family:Arial;
+	font-size:35px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
 }
 
 .simon-container {
-    position: relative;
-    top: -30%;
-    height: 100px;
+  position: relative;
+  top: -30%;
+  height: 100px;
 }
 
 #simon {
-    display: inline-block;
-    background: #1A1C1D;
-    border-radius: 50%;
-    height: 500px;
-    width: 500px;
-    transform: translateY(50%) rotateX(-70deg) rotateZ(-20deg) rotateY(-5deg);
-    box-shadow: -120px 400px 60px black;
-    transition: background 1s;
-    animation-name: simon-hover;
-    animation-duration: 18s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+  display: inline-block;
+  background: #1A1C1D;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  transform: translateY(50%) rotateX(-70deg) rotateZ(-20deg) rotateY(-5deg);
+  box-shadow: -120px 400px 60px black;
+  transition: background 1s;
+  animation-name: simon-hover;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .simon-says-right {
-    background: green !important;
+  background: green !important;
 }
 
 .simon-says-wrong {
-    background: red !important;
+  background: red !important;
 }
 
 @keyframes simon-hover {
-    0% {
-        transform: translateY(50%) rotateX(-70deg) rotateY(-5deg) rotateZ(-20deg);
-    }
-    25% {
-        transform: translateY(50%) rotateX(-70deg) rotateY(0deg) rotateZ(-20deg);
-    }
-    75% {
-        transform: translateY(50%) rotateX(-70deg) rotateY(5deg) rotateZ(-20deg);
-    }
-    100% {
-        transform: translateY(50%) rotateX(-70deg) rotateY(-5deg) rotateZ(-20deg);
-    }
+  0% {
+    transform: translateY(50%) rotateX(-70deg) rotateY(-5deg) rotateZ(-20deg);
+  }
+  25% {
+    transform: translateY(50%) rotateX(-70deg) rotateY(0deg) rotateZ(-20deg);
+  }
+  75% {
+    transform: translateY(50%) rotateX(-70deg) rotateY(5deg) rotateZ(-20deg);
+  }
+  100% {
+    transform: translateY(50%) rotateX(-70deg) rotateY(-5deg) rotateZ(-20deg);
+  }
 }
 
 .green-letter {
-    color: #388E3C;
+  color: #388E3C;
 }
 
 .red-letter {
-    color: DarkRed;
+  color: DarkRed;
 }
 
 .yellow-letter {
-    color: #F5AB35;
+  color: #F5AB35;
 }
 
 .blue-letter {
-    color: #4183D7;
+  color: #4183D7;
 }
 
 .color-button-container {
-    position: relative;
-    top: 7%;
-    left: 1%;
+  position: relative;
+  top: 7%;
+  left: 1%;
 }
 
 .color-button {
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    outline-style: none;
-    cursor: pointer
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  outline-style: none;
+  cursor: pointer
 }
 
 #green-button {
-    background: #388E3C;
-    border-top-left-radius: 100%;
-    transform: translateX(-5%) translateY(-8%);
-    opacity: 1 !important;
+  background: #388E3C;
+  border-top-left-radius: 100%;
+  transform: translateX(-5%) translateY(-8%);
+  opacity: 1 !important;
 }
 
 .green-glow {
-    background: limegreen !important;
-    box-shadow: 2px 2px 25px limegreen;
+  background: limegreen !important;
+  box-shadow: 2px 2px 25px limegreen;
 }
 
 #red-button {
-    background: DarkRed;
-    border-top-right-radius: 100%;
-    transform: translateX(5%) translateY(-8%);
+  background: DarkRed;
+  border-top-right-radius: 100%;
+  transform: translateX(5%) translateY(-8%);
 }
 
 .red-glow {
-    background: Red !important;
-    box-shadow: 2px 2px 25px Red;
+  background: Red !important;
+  box-shadow: 2px 2px 25px Red;
 }
 
 #yellow-button {
-    background: #F5AB35;
-    border-bottom-left-radius: 100%;
-    transform: translateX(-5%) translateY(8%);
+  background: #F5AB35;
+  border-bottom-left-radius: 100%;
+  transform: translateX(-5%) translateY(8%);
 }
 
 .yellow-glow {
-    background: yellow !important;
-    box-shadow: 2px 2px 25px yellow;
+  background: yellow !important;
+  box-shadow: 2px 2px 25px yellow;
 }
 
 #blue-button {
-    background: #4183D7;
-    border-bottom-right-radius: 100%;
-    transform: translateX(5%) translateY(8%);
+  background: #4183D7;
+  border-bottom-right-radius: 100%;
+  transform: translateX(5%) translateY(8%);
 }
 
 .blue-glow {
-    background: DarkTurquoise !important;
-    box-shadow: 2px 2px 25px DarkTurquoise;
+  background: DarkTurquoise !important;
+  box-shadow: 2px 2px 25px DarkTurquoise;
 }
 
 .simon-center {
-    background: #1A1C1D;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    position: absolute;
-    transform: translateY(30%) translateX(50%);
-    z-index: 1;
-    pointer-events: none;
+  background: #1A1C1D;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  transform: translateY(30%) translateX(50%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .simon-center p {
-    transform: translateY(105px);
-    font-size: 60px;
-    font-weight: lighter;
-    font-family: verdana;
+  transform: translateY(105px);
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: verdana;
 }
